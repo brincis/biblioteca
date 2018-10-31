@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>biblioteca</display-name>
+    <servlet>
+	<servlet-name>ServiceLoaderServlet</servlet-name>
+	<servlet-class>it.cb.biblioteca.servlets.ServiceLoaderServlet</servlet-class>
+	
+<!-- 	parametro di configurazione di utlizzo singola o pool connection
+	(0 Driver Manager, 1 Datasource)-->
+	<init-param>
+		<param-name>DATABASE_CONNECTION_TYPE</param-name>
+		<param-value>1</param-value>
+	</init-param>
+	<init-param>
+		<param-name>DATABASE_DRIVER</param-name>
+		<param-value>com.mysql.cj.jdbc.Driver</param-value>
+	</init-param>
+	<init-param>
+		<param-name>DATABASE_URL</param-name>
+		<param-value>jdbc:mysql://localhost:3306/umana_biblio?allowMultiQueries=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</param-value>
+	</init-param>
+	<init-param>
+		<param-name>DATABASE_USERNAME</param-name>
+		<param-value>root</param-value>
+	</init-param>
+	<init-param>
+		<param-name>DATABASE_PASSWORD</param-name>
+		<param-value>root</param-value>
+	</init-param>
+	<init-param>
+		<param-name>JNDI_NAME</param-name>
+		<param-value>jdbc/biblioteca-ds</param-value>
+	</init-param>
+	<init-param>
+		<param-name>JAVA_ENV</param-name>
+		<param-value>java:/comp/env</param-value>
+	</init-param>
+
+	<load-on-startup>1</load-on-startup>
+</servlet>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/pages/login.jsp</welcome-file>
+        </welcome-file-list>
+    </web-app>
