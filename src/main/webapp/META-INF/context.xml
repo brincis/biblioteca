@@ -32,7 +32,7 @@
               username="root" 
               password="root"
               driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://localhost:3306/umana_biblio?allowMultiQueries=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"
+              url="jdbc:mysql://185.128.148.36:3306/umana_biblio?allowMultiQueries=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"
               validationQuery="select 1"
               maxActive="10" 
               maxIdle="4"/>
