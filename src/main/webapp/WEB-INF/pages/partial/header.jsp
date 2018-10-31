@@ -10,7 +10,7 @@
         <div class="col-md-12 mt-md-0 mt-3">
 
           <!-- Content -->
-          <h5 class="text-uppercase">Biblioteca</h5>
+          <h5 class="text-uppercase">Biblioteca di Michael, Aly e Cecy</h5>
         </div>
         <!-- Grid column -->
 
