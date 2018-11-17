@@ -11,7 +11,7 @@ import it.cb.biblioteca.exceptions.ErrorCodes;
 import it.cb.biblioteca.model.BaseMapper;
 
 public abstract class GenericDao {
-
+	//commento per git
 	//.fields
 	protected Connection connection;
 
