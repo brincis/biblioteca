@@ -9,6 +9,8 @@ public static UtenteVo fromDtoToVo(UtenteDto dto) {
 	vo.setUsername(dto.getUsername());
 	return vo;
 }
+	
+	// è un altro commento 
 public static UtenteDto fromVoToDto(UtenteVo vo) {
 	UtenteDto dto = new UtenteDto();
 	dto.setUsername(vo.getUsername());
